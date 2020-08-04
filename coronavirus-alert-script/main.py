@@ -6,8 +6,8 @@ page = requests.get('https://www.worldometers.info/coronavirus/country/nepal/')
 soup = BeautifulSoup(page.content,'html.parser')
 total_cases_div = soup.find_all(class_="maincounter-number")
 
-# brief_update is a list which 
-# 1st element whives no. of total cased till date
+# brief_update is a list which have 
+# 1st element gives total no. of cased till date
 # 2nd gives total deaths
 # 3rd gives total patients recovered
 
